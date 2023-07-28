@@ -191,21 +191,6 @@ int main()
     {
         std::cout << "Invalid keyword identified. \nLine begins withs: " << strings[0] << "\nNeeds Appropriate Data type in the beginning " << std::endl;
     }
-
-    /*for(int i=0;i<n;i++) {
-        if (isOperator(Array[i])) {
-          std::cout<< Array[i] << " is an operator." << std::endl;
-      }
-     else if (validIdentifier(Array[i])) {
-          std::cout << Array[i] << " is a valid identifier." << std::endl;
-         // break;
-      }else  if (isDelimiter(Array[i])) {
-          std::cout << Array[i] << " is a Delimiter." << std::endl;
-
-      }  else {
-          std::cout << Array[i]<< " is an invalid token." << std::endl;
-
-  }
-  }*/
+    
     return 0;
 }
