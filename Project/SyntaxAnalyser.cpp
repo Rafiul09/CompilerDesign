@@ -4,8 +4,7 @@
 #include <string>
 #include <fstream>
 #include <bits/stdc++.h>
-// #include <boost/algorithm/string.hpp>
-// using namespace std;
+
 bool isDelimiter(char ch)
 {
     if (ch == ' ' || ch == '+' || ch == '-' || ch == '*' ||
@@ -15,20 +14,7 @@ bool isDelimiter(char ch)
         return (true);
     return (false);
 }
-/*bool isValidKeyword(const std::string& keyword) {
 
-  std::string validKeywords[] = { "int", "float", "char", "if", "for", "while" };
-    int numValidKeywords = sizeof(validKeywords) / sizeof(validKeywords[0]);
-
-
-    for (int i = 0; i < numValidKeywords; i++) {
-        if (keyword == validKeywords[i]) {
-            return true;
-        }
-    }
-
-    return false;
-}*/
 
 bool isValidKeyword(const std::string keyword)
 {
@@ -47,20 +33,6 @@ bool isValidKeyword(const std::string keyword)
     return false;
 }
 
-/*bool isValidKeyword(char keyword) {
-
-  std::string validKeywords[] = { "int", "float", "char", "if", "for", "while" };
-    int numValidKeywords = sizeof(validKeywords) / sizeof(validKeywords[0]);
-
-
-    for (int i = 0; i < numValidKeywords; i++) {
-        if (keyword == validKeywords[i]) {
-            return true;
-        }
-    }
-
-    return false;
-}*/
 
 bool isOperator(char cha)
 {
