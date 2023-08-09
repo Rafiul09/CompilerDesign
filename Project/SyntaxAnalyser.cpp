@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <cstring>
 #include <string>
@@ -91,15 +90,18 @@ int main()
     std::ifstream inputFile(filename);
 
     std::string line;
-    while (std::getline(inputFile, line))
+    while (std::getline(inputFile, line))///getline() function extracts characters from the file
     {
-        std::stringstream ss(line);
+        std::stringstream ss(line); ///stringstream is used for parsing the line works allows a string object to be treated as a stream.
+                                    ///It is used to operate on strings.
+                                    ///By treating the strings as streams we can perform extraction and insertion operation from
+                                    ///to string just like cin and cout streams
         std::string word;
-        while (ss >> word)
-        {
+        while (ss >> word) ///extraction operation from ss to word then pushing it to strings vector,
+        {                  ///eventually capturing the line through iteration
             strings.push_back(word);
         }
-        int Vlen = strings.size(); // vetcor length
+        int Vlen = strings.size(); /// vector length
 
         std::cout << "Strings in the vector: ";
         for (const std::string &str : strings)
