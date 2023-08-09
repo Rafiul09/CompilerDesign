@@ -119,25 +119,24 @@ int main()
             {
                 std::cout << strings[0] << " Valid keyword identified." << std::endl;
 
-                std::string A = strings[1];
-                // std::cout<< A[0];
-                if (validVar(A[0]))
+
+                if (validVar(strings[1][0]))
                 {
-                    std::cout << A << " Identifier detected\nValid Identifier Name." << std::endl;
+                    std::cout << strings[1] << " Identifier detected\nValid Identifier Name." << std::endl;
                 }
-                else if (!validVar(A[0]))
+                else if (!validVar(strings[1][0]))
                 {
-                    std::cout << A[0] << " \nInValid Identifier Name." << std::endl;
+                    std::cout << strings[1][0] << " \nInValid Identifier Name." << std::endl;
                 }
 
-                // std:: string B= strings[4];
-                if (A[1] == 59) // 59=;
+
+                if (strings[1][1] == 59) // 59=;
                 {
-                    std::cout << A[1] << " Detected\nValid Variable Declared . " << std::endl;
+                    std::cout << strings[1][1] << " Detected\nValid Variable Declared . " << std::endl;
                 }
-                else if (A[1] != 59)
+                else if (strings[1][1] != 59)
                 {
-                    std::cout << A[1] << " Detected\nInValid Variable Declared. " << std::endl;
+                    std::cout << strings[1][1] << " Detected\nInValid Variable Declared. " << std::endl;
                 }
             }
             else if (!isValidKeyword(strings[0]))
@@ -151,28 +150,23 @@ int main()
             {
                 std::cout << strings[0] << " Valid keyword identified." << std::endl;
 
-                std::string A = strings[1];
-                // std::cout<< A[0];
-                if (validVar(A[0]))
+                if (validVar(strings[1][0]))
                 {
-                    std::cout << A << " Identifier detected\nValid Identifier Name." << std::endl;
+                    std::cout <<strings[1] << " Identifier detected\nValid Identifier Name." << std::endl;
                 }
-                else if (!validVar(A[0]))
+                else if (!validVar(strings[1][0]))
                 {
-                    std::cout << A[0] << " \nInValid Identifier Name." << std::endl;
+                    std::cout << strings[1][0] << " \nInValid Identifier Name." << std::endl;
                 }
 
-                // std:: string B= strings[4];
 
-                std::string B = strings[2];
-                // std::cout<< B[0];
-                if (B[0] == 40 && B[1] == 41 && B[2] == 59)
+                if (strings[2][0] == 40 && strings[2][1] == 41 && strings[2][2] == 59)
                 {
-                    std::cout << B << " Detected\nValid Function With no argument Declared. " << std::endl;
+                    std::cout << strings[2] << " Detected\nValid Function With no argument Declared. " << std::endl;
                 }
-                else if (B[0] != 40 || B[1] != 41 || B[2] != 59)
+                else if (strings[2][0] != 40 || strings[2][1] != 41 || strings[2][2] != 59)
                 {
-                    std::cout << B << " Detected\nInValid Function declaration . " << std::endl;
+                    std::cout << strings[2] << " Detected\nInValid Function declaration . " << std::endl;
                 }
             }
             else if (!isValidKeyword(strings[0]))
@@ -188,37 +182,34 @@ int main()
             {
                 std::cout << strings[0] << " Valid keyword identified." << std::endl;
 
-                std::string A = strings[1];
-                // std::cout<< A[0];
-                if (validVar(A[0]))
+
+                if (validVar(strings[1][0]))
                 {
-                    std::cout << A << " Identifier detected\nValid Name Declared." << std::endl;
+                    std::cout << strings[1] << " Identifier detected\nValid Name Declared." << std::endl;
                 }
-                else if (!validVar(A[0]))
+                else if (!validVar(strings[1][0]))
                 {
-                    std::cout << A[0] << " \nInValid Name Declared." << std::endl;
+                    std::cout << strings[1][0] << " \nInValid Name Declared." << std::endl;
                 }
 
-                std::string B = strings[2];
-                // std::cout<< B[0];
-                if (B[0] == 40 && B[1] == 41)
+
+                if (strings[2][0] == 40 && strings[2][1] == 41)
                 {
-                    std::cout << B << " Detected\nValid Function With no argument Declared. " << std::endl;
+                    std::cout << strings[2] << " Detected\nValid Function With no argument Declared. " << std::endl;
                 }
-                else if (B[0] != 40 && B[1] != 41)
+                else if (strings[2][0] != 40 && strings[2][1] != 41)
                 {
-                    std::cout << B << " Detected\nInValid Function argument found. " << std::endl;
+                    std::cout << strings[2]<< " Detected\nInValid Function argument found. " << std::endl;
                 }
 
-                std::string C = strings[3];
-                // std::cout<< C[0];
-                if (C[0] == 123 && C[1] == 125)
+
+                if (strings[3][0] == 123 && strings[3][1] == 125)
                 {
-                    std::cout << C << " Detected\nValid Function  Declared. " << std::endl;
+                    std::cout << strings[3] << " Detected\nValid Function  Declared. " << std::endl;
                 }
-                else if (C[0] != 123 && C[1] != 125)
+                else if (strings[3][0] != 123 && strings[3][1] != 125)
                 {
-                    std::cout << C << " Detected\nInValid Function Declared. " << std::endl;
+                    std::cout << strings[3] << " Detected\nInValid Function Declared. " << std::endl;
                 }
 
                 std::cout << "\n";
@@ -236,30 +227,27 @@ int main()
             {
                 std::cout << strings[0] << " Valid keyword identified." << std::endl;
 
-                std::string A = strings[1];
-                // std::cout<< A[0];
-                if (validVar(A[0]))
+
+                if (validVar(strings[1][0]))
                 {
-                    std::cout << A << " Identifier detected\nValid Name Declared." << std::endl;
+                    std::cout << strings[1] << " Identifier detected\nValid Name Declared." << std::endl;
                 }
-                else if (!validVar(A[0]))
+                else if (!validVar(strings[1][0]))
                 {
-                    std::cout << A[0] << " \nInValid Name Declared." << std::endl;
+                    std::cout << strings[1][0] << " \nInValid Name Declared." << std::endl;
                 }
 
-                std::string B = strings[2];
-                // std::cout<< B[0];
-                if (B[0] == 40 && B[1] == 41)
+
+                if (strings[2][0] == 40 && strings[2][1] == 41)
                 {
-                    std::cout << B << " Detected\nValid Function With no argument Declared. " << std::endl;
+                    std::cout << strings[2] << " Detected\nValid Function With no argument Declared. " << std::endl;
                 }
-                else if (B[0] != 40 && B[1] != 41)
+                else if (strings[2][0] != 40 && strings[2][1] != 41)
                 {
-                    std::cout << B << " Detected\nInValid Function argument found. " << std::endl;
+                    std::cout << strings[2] << " Detected\nInValid Function argument found. " << std::endl;
                 }
 
-                // std::string C = strings[3];
-                // std::cout<< C[0];
+
                 if (strings[3] == "{")
                 {
                     std::cout << strings[3] << " Detected\nCurly Braces Open. " << std::endl;
